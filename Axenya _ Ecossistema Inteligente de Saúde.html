@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="pt"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width"><title>Axenya | Ecossistema Inteligente de Saúde</title><meta name="description" content="Axenya, o primeiro ecossistema inteligente de saúde. Substituímos a sua corretora de saúde e fazemos muito mais."><meta name="next-head-count" content="4"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/"><link href="./Axenya _ Ecossistema Inteligente de Saúde_files/css2" rel="stylesheet"><link rel="icon" href="https://www.axenya.com/favicon.ico"><script async="" src="./Axenya _ Ecossistema Inteligente de Saúde_files/js"></script><script>window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-78ND35G50H');</script><noscript data-n-css=""></noscript><script defer="" nomodule="" src="./Axenya _ Ecossistema Inteligente de Saúde_files/polyfills.js.download"></script><script src="./Axenya _ Ecossistema Inteligente de Saúde_files/webpack.js.download" defer=""></script><script src="./Axenya _ Ecossistema Inteligente de Saúde_files/main.js.download" defer=""></script><script src="./Axenya _ Ecossistema Inteligente de Saúde_files/_app.js.download" defer=""></script><script src="./Axenya _ Ecossistema Inteligente de Saúde_files/index.js.download" defer=""></script><script src="./Axenya _ Ecossistema Inteligente de Saúde_files/_buildManifest.js.download" defer=""></script><script src="./Axenya _ Ecossistema Inteligente de Saúde_files/_ssgManifest.js.download" defer=""></script><style>:root {
+  --toastify-color-light: #fff;
+  --toastify-color-dark: #121212;
+  --toastify-color-info: #3498db;
+  --toastify-color-success: #07bc0c;
+  --toastify-color-warning: #f1c40f;
+  --toastify-color-error: #e74c3c;
+  --toastify-color-transparent: rgba(255, 255, 255, 0.7);
+  --toastify-icon-color-info: var(--toastify-color-info);
+  --toastify-icon-color-success: var(--toastify-color-success);
+  --toastify-icon-color-warning: var(--toastify-color-warning);
+  --toastify-icon-color-error: var(--toastify-color-error);
+  --toastify-toast-width: 320px;
+  --toastify-toast-background: #fff;
+  --toastify-toast-min-height: 64px;
+  --toastify-toast-max-height: 800px;
+  --toastify-font-family: sans-serif;
+  --toastify-z-index: 9999;
+  --toastify-text-color-light: #757575;
+  --toastify-text-color-dark: #fff;
+  --toastify-text-color-info: #fff;
+  --toastify-text-color-success: #fff;
+  --toastify-text-color-warning: #fff;
+  --toastify-text-color-error: #fff;
+  --toastify-spinner-color: #616161;
+  --toastify-spinner-color-empty-area: #e0e0e0;
+  --toastify-color-progress-light: linear-gradient(
+    to right,
+    #4cd964,
+    #5ac8fa,
+    #007aff,
+    #34aadc,
+    #5856d6,
+    #ff2d55
+  );
+  --toastify-color-progress-dark: #bb86fc;
+  --toastify-color-progress-info: var(--toastify-color-info);
+  --toastify-color-progress-success: var(--toastify-color-success);
+  --toastify-color-progress-warning: var(--toastify-color-warning);
+  --toastify-color-progress-error: var(--toastify-color-error);
+}
+
+.Toastify__toast-container {
+  z-index: var(--toastify-z-index);
+  -webkit-transform: translate3d(0, 0, var(--toastify-z-index) px);
+  position: fixed;
+  padding: 4px;
+  width: var(--toastify-toast-width);
+  box-sizing: border-box;
+  color: #fff;
+}
+.Toastify__toast-container--top-left {
+  top: 1em;
+  left: 1em;
+}
+.Toastify__toast-container--top-center {
+  top: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Toastify__toast-container--top-right {
+  top: 1em;
+  right: 1em;
+}
+.Toastify__toast-container--bottom-left {
+  bottom: 1em;
+  left: 1em;
+}
+.Toastify__toast-container--bottom-center {
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Toastify__toast-container--bottom-right {
+  bottom: 1em;
+  right: 1em;
+}
+
+@media only screen and (max-width : 480px) {
+  .Toastify__toast-container {
+    width: 100vw;
+    padding: 0;
+    left: 0;
+    margin: 0;
+  }
+  .Toastify__toast-container--top-left, .Toastify__toast-container--top-center, .Toastify__toast-container--top-right {
+    top: 0;
+    transform: translateX(0);
+  }
+  .Toastify__toast-container--bottom-left, .Toastify__toast-container--bottom-center, .Toastify__toast-container--bottom-right {
+    bottom: 0;
+    transform: translateX(0);
+  }
+  .Toastify__toast-container--rtl {
+    right: 0;
+    left: initial;
+  }
+}
+.Toastify__toast {
+  position: relative;
+  min-height: var(--toastify-toast-min-height);
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  max-height: var(--toastify-toast-max-height);
+  overflow: hidden;
+  font-family: var(--toastify-font-family);
+  cursor: default;
+  direction: ltr;
+  /* webkit only issue #791 */
+  z-index: 0;
+}
+.Toastify__toast--rtl {
+  direction: rtl;
+}
+.Toastify__toast--close-on-click {
+  cursor: pointer;
+}
+.Toastify__toast-body {
+  margin: auto 0;
+  flex: 1 1 auto;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+}
+.Toastify__toast-body > div:last-child {
+  word-break: break-word;
+  flex: 1 1;
+}
+.Toastify__toast-icon {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  width: 20px;
+  flex-shrink: 0;
+  display: flex;
+}
+
+.Toastify--animate {
+  animation-fill-mode: both;
+  animation-duration: 0.7s;
+}
+
+.Toastify--animate-icon {
+  animation-fill-mode: both;
+  animation-duration: 0.3s;
+}
+
+@media only screen and (max-width : 480px) {
+  .Toastify__toast {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+}
+.Toastify__toast-theme--dark {
+  background: var(--toastify-color-dark);
+  color: var(--toastify-text-color-dark);
+}
+.Toastify__toast-theme--light {
+  background: var(--toastify-color-light);
+  color: var(--toastify-text-color-light);
+}
+.Toastify__toast-theme--colored.Toastify__toast--default {
+  background: var(--toastify-color-light);
+  color: var(--toastify-text-color-light);
+}
+.Toastify__toast-theme--colored.Toastify__toast--info {
+  color: var(--toastify-text-color-info);
+  background: var(--toastify-color-info);
+}
+.Toastify__toast-theme--colored.Toastify__toast--success {
+  color: var(--toastify-text-color-success);
+  background: var(--toastify-color-success);
+}
+.Toastify__toast-theme--colored.Toastify__toast--warning {
+  color: var(--toastify-text-color-warning);
+  background: var(--toastify-color-warning);
+}
+.Toastify__toast-theme--colored.Toastify__toast--error {
+  color: var(--toastify-text-color-error);
+  background: var(--toastify-color-error);
+}
+
+.Toastify__progress-bar-theme--light {
+  background: var(--toastify-color-progress-light);
+}
+.Toastify__progress-bar-theme--dark {
+  background: var(--toastify-color-progress-dark);
+}
+.Toastify__progress-bar--info {
+  background: var(--toastify-color-progress-info);
+}
+.Toastify__progress-bar--success {
+  background: var(--toastify-color-progress-success);
+}
+.Toastify__progress-bar--warning {
+  background: var(--toastify-color-progress-warning);
+}
+.Toastify__progress-bar--error {
+  background: var(--toastify-color-progress-error);
+}
+.Toastify__progress-bar-theme--colored.Toastify__progress-bar--info, .Toastify__progress-bar-theme--colored.Toastify__progress-bar--success, .Toastify__progress-bar-theme--colored.Toastify__progress-bar--warning, .Toastify__progress-bar-theme--colored.Toastify__progress-bar--error {
+  background: var(--toastify-color-transparent);
+}
+
+.Toastify__close-button {
+  color: #fff;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s ease;
+  align-self: flex-start;
+}
+.Toastify__close-button--light {
+  color: #000;
+  opacity: 0.3;
+}
+.Toastify__close-button > svg {
+  fill: currentColor;
+  height: 16px;
+  width: 14px;
+}
+.Toastify__close-button:hover, .Toastify__close-button:focus {
+  opacity: 1;
+}
+
+@keyframes Toastify__trackProgress {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+.Toastify__progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  z-index: var(--toastify-z-index);
+  opacity: 0.7;
+  transform-origin: left;
+}
+.Toastify__progress-bar--animated {
+  animation: Toastify__trackProgress linear 1 forwards;
+}
+.Toastify__progress-bar--controlled {
+  transition: transform 0.2s;
+}
+.Toastify__progress-bar--rtl {
+  right: 0;
+  left: initial;
+  transform-origin: right;
+}
+
+.Toastify__spinner {
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-radius: 100%;
+  border-color: var(--toastify-spinner-color-empty-area);
+  border-right-color: var(--toastify-spinner-color);
+  animation: Toastify__spin 0.65s linear infinite;
+}
+
+@keyframes Toastify__bounceInRight {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes Toastify__bounceOutRight {
+  20% {
+    opacity: 1;
+    transform: translate3d(-20px, 0, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0);
+  }
+}
+@keyframes Toastify__bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes Toastify__bounceOutLeft {
+  20% {
+    opacity: 1;
+    transform: translate3d(20px, 0, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0);
+  }
+}
+@keyframes Toastify__bounceInUp {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  from {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0);
+  }
+  75% {
+    transform: translate3d(0, 10px, 0);
+  }
+  90% {
+    transform: translate3d(0, -5px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes Toastify__bounceOutUp {
+  20% {
+    transform: translate3d(0, -10px, 0);
+  }
+  40%, 45% {
+    opacity: 1;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, -2000px, 0);
+  }
+}
+@keyframes Toastify__bounceInDown {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes Toastify__bounceOutDown {
+  20% {
+    transform: translate3d(0, 10px, 0);
+  }
+  40%, 45% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+}
+.Toastify__bounce-enter--top-left, .Toastify__bounce-enter--bottom-left {
+  animation-name: Toastify__bounceInLeft;
+}
+.Toastify__bounce-enter--top-right, .Toastify__bounce-enter--bottom-right {
+  animation-name: Toastify__bounceInRight;
+}
+.Toastify__bounce-enter--top-center {
+  animation-name: Toastify__bounceInDown;
+}
+.Toastify__bounce-enter--bottom-center {
+  animation-name: Toastify__bounceInUp;
+}
+
+.Toastify__bounce-exit--top-left, .Toastify__bounce-exit--bottom-left {
+  animation-name: Toastify__bounceOutLeft;
+}
+.Toastify__bounce-exit--top-right, .Toastify__bounce-exit--bottom-right {
+  animation-name: Toastify__bounceOutRight;
+}
+.Toastify__bounce-exit--top-center {
+  animation-name: Toastify__bounceOutUp;
+}
+.Toastify__bounce-exit--bottom-center {
+  animation-name: Toastify__bounceOutDown;
+}
+
+@keyframes Toastify__zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes Toastify__zoomOut {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 0;
+  }
+}
+.Toastify__zoom-enter {
+  animation-name: Toastify__zoomIn;
+}
+
+.Toastify__zoom-exit {
+  animation-name: Toastify__zoomOut;
+}
+
+@keyframes Toastify__flipIn {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  to {
+    transform: perspective(400px);
+  }
+}
+@keyframes Toastify__flipOut {
+  from {
+    transform: perspective(400px);
+  }
+  30% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1;
+  }
+  to {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0;
+  }
+}
+.Toastify__flip-enter {
+  animation-name: Toastify__flipIn;
+}
+
+.Toastify__flip-exit {
+  animation-name: Toastify__flipOut;
+}
+
+@keyframes Toastify__slideInRight {
+  from {
+    transform: translate3d(110%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes Toastify__slideInLeft {
+  from {
+    transform: translate3d(-110%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes Toastify__slideInUp {
+  from {
+    transform: translate3d(0, 110%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes Toastify__slideInDown {
+  from {
+    transform: translate3d(0, -110%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes Toastify__slideOutRight {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    visibility: hidden;
+    transform: translate3d(110%, 0, 0);
+  }
+}
+@keyframes Toastify__slideOutLeft {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    visibility: hidden;
+    transform: translate3d(-110%, 0, 0);
+  }
+}
+@keyframes Toastify__slideOutDown {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    visibility: hidden;
+    transform: translate3d(0, 500px, 0);
+  }
+}
+@keyframes Toastify__slideOutUp {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -500px, 0);
+  }
+}
+.Toastify__slide-enter--top-left, .Toastify__slide-enter--bottom-left {
+  animation-name: Toastify__slideInLeft;
+}
+.Toastify__slide-enter--top-right, .Toastify__slide-enter--bottom-right {
+  animation-name: Toastify__slideInRight;
+}
+.Toastify__slide-enter--top-center {
+  animation-name: Toastify__slideInDown;
+}
+.Toastify__slide-enter--bottom-center {
+  animation-name: Toastify__slideInUp;
+}
+
+.Toastify__slide-exit--top-left, .Toastify__slide-exit--bottom-left {
+  animation-name: Toastify__slideOutLeft;
+}
+.Toastify__slide-exit--top-right, .Toastify__slide-exit--bottom-right {
+  animation-name: Toastify__slideOutRight;
+}
+.Toastify__slide-exit--top-center {
+  animation-name: Toastify__slideOutUp;
+}
+.Toastify__slide-exit--bottom-center {
+  animation-name: Toastify__slideOutDown;
+}
+
+@keyframes Toastify__spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=ReactToastify.css.map */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9ub2RlX21vZHVsZXMvcmVhY3QtdG9hc3RpZnkvc2Nzcy9fdmFyaWFibGVzLnNjc3MiLCJ3ZWJwYWNrOi8vbm9kZV9tb2R1bGVzL3JlYWN0LXRvYXN0aWZ5L2Rpc3QvUmVhY3RUb2FzdGlmeS5jc3MiLCJ3ZWJwYWNrOi8vbm9kZV9tb2R1bGVzL3JlYWN0LXRvYXN0aWZ5L3Njc3MvX3RvYXN0Q29udGFpbmVyLnNjc3MiLCJ3ZWJwYWNrOi8vbm9kZV9tb2R1bGVzL3JlYWN0LXRvYXN0aWZ5L3Njc3MvX3RvYXN0LnNjc3MiLCJ3ZWJwYWNrOi8vbm9kZV9tb2R1bGVzL3JlYWN0LXRvYXN0aWZ5L3Njc3MvX3RoZW1lLnNjc3MiLCJ3ZWJwYWNrOi8vbm9kZV9tb2R1bGVzL3JlYWN0LXRvYXN0aWZ5L3Njc3MvX2Nsb3NlQnV0dG9uLnNjc3MiLCJ3ZWJwYWNrOi8vbm9kZV9tb2R1bGVzL3JlYWN0LXRvYXN0aWZ5L3Njc3MvX3Byb2dyZXNzQmFyLnNjc3MiLCJ3ZWJwYWNrOi8vbm9kZV9tb2R1bGVzL3JlYWN0LXRvYXN0aWZ5L3Njc3MvX2ljb25zLnNjc3MiLCJ3ZWJwYWNrOi8vbm9kZV9tb2R1bGVzL3JlYWN0LXRvYXN0aWZ5L3Njc3MvYW5pbWF0aW9ucy9fYm91bmNlLnNjc3MiLCJ3ZWJwYWNrOi8vbm9kZV9tb2R1bGVzL3JlYWN0LXRvYXN0aWZ5L3Njc3MvYW5pbWF0aW9ucy9fem9vbS5zY3NzIiwid2VicGFjazovL25vZGVfbW9kdWxlcy9yZWFjdC10b2FzdGlmeS9zY3NzL2FuaW1hdGlvbnMvX2ZsaXAuc2NzcyIsIndlYnBhY2s6Ly9ub2RlX21vZHVsZXMvcmVhY3QtdG9hc3RpZnkvc2Nzcy9hbmltYXRpb25zL19zbGlkZS5zY3NzIiwid2VicGFjazovL25vZGVfbW9kdWxlcy9yZWFjdC10b2FzdGlmeS9zY3NzL2FuaW1hdGlvbnMvX3NwaW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHQTtFQUNFLDRCQUFBO0VBQ0EsOEJBQUE7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N2FBO0VBQ0UsZ0NBQUE7QVIrYUY7O0FRNWFBO0VBQ0UsaUNBQUE7QVIrYUY7O0FTM2NBO0VBQ0U7SUFDRSxzREFBQTtJQUNBLGtDQUFBO0lBQ0EsVUFBQTtFVDhjRjtFUzVjQTtJQUNFLHVEQUFBO0lBQ0Esa0NBQUE7RVQ4Y0Y7RVM1Y0E7SUFDRSxzREFBQTtJQUNBLFVBQUE7RVQ4Y0Y7RVM1Y0E7SUFDRSxzREFBQTtFVDhjRjtFUzVjQTtJQUNFLDZCQUFBO0VUOGNGO0FBQ0Y7QVMzY0E7RUFDRTtJQUNFLDZCQUFBO0VUNmNGO0VTM2NBO0lBQ0UsdURBQUE7SUFDQSxVQUFBO0VUNmNGO0VTM2NBO0lBQ0Usc0RBQUE7SUFDQSxVQUFBO0VUNmNGO0FBQ0Y7QVMxY0E7RUFDRSxnQ0FBQTtBVDRjRjs7QVN6Y0E7RUFDRSxpQ0FBQTtBVDRjRjs7QVVqZkE7RUFDRTtJQUNFLGtDQUFBO0lBQ0EsbUJBQUE7RVZvZkY7RVVsZkE7SUFSQSwrQkFBQTtFVjZmQTtBQUNGO0FVamZBO0VBQ0U7SUFDRSxtQ0FBQTtJQUNBLG1CQUFBO0VWbWZGO0VVamZBO0lBbEJBLCtCQUFBO0VWc2dCQTtBQUNGO0FVaGZBO0VBQ0U7SUFDRSxrQ0FBQTtJQUNBLG1CQUFBO0VWa2ZGO0VVaGZBO0lBNUJBLCtCQUFBO0VWK2dCQTtBQUNGO0FVL2VBO0VBQ0U7SUFDRSxtQ0FBQTtJQUNBLG1CQUFBO0VWaWZGO0VVL2VBO0lBdENBLCtCQUFBO0VWd2hCQTtBQUNGO0FVOWVBO0VBQ0U7SUE1Q0EsK0JBQUE7RVY2aEJBO0VVOWVBO0lBQ0Usa0JBQUE7SUFDQSxrQ0FBQTtFVmdmRjtBQUNGO0FVN2VBO0VBQ0U7SUF0REEsK0JBQUE7RVZzaUJBO0VVN2VBO0lBQ0Usa0JBQUE7SUFDQSxtQ0FBQTtFVitlRjtBQUNGO0FVNWVBO0VBQ0U7SUFoRUEsK0JBQUE7RVYraUJBO0VVNWVBO0lBQ0Usa0JBQUE7SUFDQSxtQ0FBQTtFVjhlRjtBQUNGO0FVM2VBO0VBQ0U7SUExRUEsK0JBQUE7RVZ3akJBO0VVM2VBO0lBQ0Usa0JBQUE7SUFDQSxvQ0FBQTtFVjZlRjtBQUNGO0FVemVFO0VBRUUscUNBQUE7QVYwZUo7QVV4ZUU7RUFFRSxzQ0FBQTtBVnllSjtBVXZlRTtFQUNFLHFDQUFBO0FWeWVKO0FVdmVFO0VBQ0UsbUNBQUE7QVZ5ZUo7O0FVcGVFO0VBRUUsc0NBQUE7QVZzZUo7QVVwZUU7RUFFRSx1Q0FBQTtBVnFlSjtBVW5lRTtFQUNFLG9DQUFBO0FWcWVKO0FVbmVFO0VBQ0Usc0NBQUE7QVZxZUo7O0FXdmxCQTtFQUNFO0lBQ0UsdUJBQUE7RVgwbEJGO0VXeGxCQTtJQUNFLHlCQUFBO0VYMGxCRjtBQUNGOztBQVlBLDRDQUE0QyIsInNvdXJjZVJvb3QiOiIifQ== */</style><noscript id="__next_css__DO_NOT_USE__"></noscript><style data-styled="active" data-styled-version="5.3.6">*{margin:0;padding:0;box-sizing:border-box;}body{width:100vw;background:#FFFFFF;color:#000000;font:400 16px Roboto,sans-serif;overflow-x:hidden;}footer{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;background-color:#000000;color:#E3E5E7;padding:100px 0px;}.iYaryb{width:100vw;padding:100px 0 60px;background:#000000;overflow:hidden;}.cLryyV{width:80%;}.cvUNB{width:100%;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}@media (max-width:768px){.cvUNB{grid-template-columns:unset;gap:32px;}}.hJgoVE:first-child div{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.hJgoVE:first-child div img{margin-right:16px;}.hJgoVE:first-child div span{font-size:18px;}.hJgoVE:first-child div:last-child{display:grid;margin-top:24px;}.hJgoVE:first-child div:last-child span{color:#7B7B7B;line-height:180%;}.hJgoVE div.social{display:grid;grid-template-columns:repeat(3,38px);gap:16px;}.hJgoVE div.social a{-webkit-transition:all .3s;transition:all .3s;}.hJgoVE div.social a:hover{-webkit-transform:translateY(-3px);-ms-transform:translateY(-3px);transform:translateY(-3px);}.hJgoVE div.social svg{width:38px;height:38px;}.hJgoVE.contact div{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:24px;}.hJgoVE a,.hJgoVE p{margin:20px 0 12px;}.hJgoVE a{-webkit-text-decoration:none;text-decoration:none;color:#fff;margin:20px 0 12px;display:block;}.hJgoVE a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.hJgoVE strong{font-size:24px;}.dVBaHD{position:fixed;width:100vw;height:100vh;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;background-color:#000000b8;z-index:999999999;}.dVBaHD span,.dVBaHD svg{font-size:22px;color:white;-webkit-animation:loading01 1.4s infinite alternate;animation:loading01 1.4s infinite alternate;}.dVBaHD span:after{content:' .';-webkit-animation:dots 1s steps(5,end) infinite;animation:dots 1s steps(5,end) infinite;}.dVBaHD svg{height:80px;margin-bottom:16px;}.dVBaHD svg *{fill:white;}@-webkit-keyframes loading01{0%{opacity:1;}100%{opacity:.5;}}@keyframes loading01{0%{opacity:1;}100%{opacity:.5;}}@-webkit-keyframes dots{0%,20%{color:rgba(0,0,0,0);text-shadow:.25em 0 0 rgba(0,0,0,0),.5em 0 0 rgba(0,0,0,0);}40%{color:white;text-shadow:.25em 0 0 rgba(0,0,0,0),.5em 0 0 rgba(0,0,0,0);}60%{text-shadow:.25em 0 0 white,.5em 0 0 rgba(0,0,0,0);}80%,100%{text-shadow:.25em 0 0 white,.5em 0 0 white;}}@keyframes dots{0%,20%{color:rgba(0,0,0,0);text-shadow:.25em 0 0 rgba(0,0,0,0),.5em 0 0 rgba(0,0,0,0);}40%{color:white;text-shadow:.25em 0 0 rgba(0,0,0,0),.5em 0 0 rgba(0,0,0,0);}60%{text-shadow:.25em 0 0 white,.5em 0 0 rgba(0,0,0,0);}80%,100%{text-shadow:.25em 0 0 white,.5em 0 0 white;}}.fXsskH{position:relative;width:100vw;margin:0 auto;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;background:url('https://www.datocms-assets.com/85378/1668540061-bg.png');background-repeat:no-repeat;background-position-x:60vw;background-position-y:-60px;}@media (max-width:1024px){.fXsskH{background:unset;}}.lbJNaV{height:100%;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}.lbJNaV[data-section="principal"]{width:1200px;display:grid;grid-template-columns:5fr 2fr;padding:180px 0 240px;gap:32px;}.lbJNaV[data-section="principal"] b{background-color:#000000;color:#ffffff;border-radius:4px;padding:0 12px;font-weight:500;display:inline-block;}.lbJNaV[data-section="principal"] a{border:1px solid #3D3F42;color:#3D3F42;border-radius:4px;background-color:#ffffff;font-size:16px;font-weight:bold;background-color:transparent;padding:16px 42px;cursor:pointer;-webkit-text-decoration:none;text-decoration:none;-webkit-transition:all .3s;transition:all .3s;}.lbJNaV[data-section="principal"] a:hover{background-color:#000000;border-color:#000000;color:#ffffff;-webkit-transform:translateY(-2px);-ms-transform:translateY(-2px);transform:translateY(-2px);}@media (max-width:1024px){.lbJNaV[data-section="principal"][data-section="principal"]{display:grid;grid-template-columns:1fr;padding-bottom:80px;gap:32px;width:100%;height:100%;padding:120px 32px 140px;}.lbJNaV[data-section="principal"] h1{font-size:32px;line-height:140%;}.lbJNaV[data-section="principal"] h2{color:#67696C;font-size:24px;}}@media (max-width:768px){.lbJNaV[data-section="principal"] h1{font-size:28px;}.lbJNaV[data-section="principal"] h2{font-size:21px;}}.lbJNaV[data-section="apresentation"]{position:relative;height:100%;padding:80px 0;background-color:#F5FBFB;}.lbJNaV[data-section="apresentation"] .content{overflow:overlay;height:100%;width:100%;}@media (max-width:1024px){.lbJNaV[data-section="apresentation"]{height:100%;overflow:hidden;}}.lbJNaV[data-section="soluctions"]{position:relative;background-color:#ECF4F4;padding:120px;height:100%;}@media (max-width:1024px){.lbJNaV[data-section="soluctions"]{padding:120px 16px;}}@media (max-width:768px){.lbJNaV[data-section="soluctions"]{background-color:#fff;}}.lbJNaV[data-section="results"]{height:100%;width:100%;padding:120px 180px;overflow:hidden;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;}.lbJNaV[data-section="results"] h5{color:#A2BABA;font-weight:bolder;font-size:18px;-webkit-letter-spacing:5px;-moz-letter-spacing:5px;-ms-letter-spacing:5px;letter-spacing:5px;margin-bottom:16px;text-transform:uppercase;margin-bottom:24px;}@media (max-width:1024px){.lbJNaV[data-section="results"]{overflow:scroll;padding:120px 0 120px 24px;}.lbJNaV[data-section="results"] h5{font-size:16px;}}.lbJNaV[data-section="form"]{position:relative;height:100%;background-color:#000000;color:#ffffff;padding:120px 0;}.lbJNaV[data-section="form"] .content{display:grid;grid-template-columns:4fr 5fr;gap:52px;height:100%;width:90%;}.lbJNaV[data-section="form"] img{margin-bottom:32px;}.lbJNaV[data-section="form"] h3{font-size:44px;margin-bottom:32px;}.lbJNaV[data-section="form"] p{font-size:24px;color:#C1C2C6;margin-bottom:24px;}.lbJNaV[data-section="form"] svg{font-size:48px;}.lbJNaV[data-section="form"] form{display:grid;gap:16px;}.lbJNaV[data-section="form"] form input,.lbJNaV[data-section="form"] form textarea,.lbJNaV[data-section="form"] form button{height:52px;padding:0 24px;border-radius:4px;background-color:transparent;font-size:18px;}.lbJNaV[data-section="form"] form input,.lbJNaV[data-section="form"] form textarea{border:1px solid #8F8F8F;color:#fff;}.lbJNaV[data-section="form"] form textarea{padding-top:16px;height:120px;}.lbJNaV[data-section="form"] form input[type="submit"]{border:1px solid #3896B4;color:#3896B4;cursor:pointer;-webkit-transition:all .3s;transition:all .3s;}.lbJNaV[data-section="form"] form input[type="submit"]:hover{background-color:#3896B4;color:#000;}@media (max-width:1024px){.lbJNaV[data-section="form"] .content{grid-template-columns:1fr;grid-template-rows:repeat(2,1fr);}.lbJNaV[data-section="form"] img{margin-bottom:32px;width:72px;}.lbJNaV[data-section="form"] h3{font-size:38px;margin-bottom:24px;}.lbJNaV[data-section="form"] p{font-size:20px;color:#C1C2C6;margin-bottom:16px;}}@media (max-width:768px){.lbJNaV[data-section="form"] img{width:52px;}.lbJNaV[data-section="form"] h3{font-size:32px;}.lbJNaV[data-section="form"] svg:last-child{display:none;}}.lbJNaV[data-section="partners"]{background-color:#F9F9F9;height:100%;padding:120px 24px;display:grid;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;gap:32px;overflow:hidden;}.lbJNaV[data-section="partners"] h5{font-size:18px;color:#3D3F42;text-align:center;}.lbJNaV[data-section="partners"] .content{position:relative;width:100%;margin:0 auto;overflow:hidden;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;gap:72px;}.lbJNaV[data-section="partners"] .content:before{content:'';position:absolute;width:100%;height:100%;background:linear-gradient(90deg,#F9F9F9 0%,rgba(249,249,249,0) 48.96%,#F9F9F9 100%);}@media (max-width:768px){.lbJNaV[data-section="partners"] .content{gap:32px;}.lbJNaV[data-section="partners"] .content img{width:1200px;}}.lbJNaV[data-section="achievements"]{background-color:#F9F9F9;height:100%;padding:120px 24px;overflow:hidden;}.lbJNaV[data-section="achievements"] .content{width:1200px;}.lbJNaV[data-section="achievements"] .content ul{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}.lbJNaV[data-section="achievements"] .content ul li{width:100%;margin:0 auto;display:grid;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:0 80px;gap:12px;}.lbJNaV[data-section="achievements"] .content ul li strong{font-size:48px;font-weight:500;text-align:center;}.lbJNaV[data-section="achievements"] .content ul li p{font-size:24px;text-align:center;color:#6B6C70;margin-bottom:auto;}.lbJNaV[data-section="achievements"] .content ul li:not(:last-child){border-right:1px solid #EAF2F4;}@media (max-width:1024px){.lbJNaV[data-section="achievements"] .content{width:100%;padding:0 24px;}.lbJNaV[data-section="achievements"] .content ul{grid-template-columns:unset;gap:64px;}.lbJNaV[data-section="achievements"] .content ul li{border:unset !important;}}@media (max-width:768px){.lbJNaV[data-section="achievements"] .content ul li{padding:0 24px;gap:8px;}.lbJNaV[data-section="achievements"] .content ul li strong{font-size:32px;}.lbJNaV[data-section="achievements"] .content ul li p{font-size:20px;}}.lbJNaV[data-section="blog"]{height:100%;overflow:hidden;}.lbJNaV[data-section="blog"] .content{width:1200px;padding:120px 0;}.lbJNaV[data-section="blog"] .content h5{font-size:28px;color:#2E3030;margin-bottom:24px;text-align:center;font-weight:500;}.lbJNaV[data-section="blog"] .content h5 a{font-weight:bold;color:#000;}.lbJNaV[data-section="blog"] .content ul{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}.lbJNaV[data-section="blog"] .content ul li{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.lbJNaV[data-section="blog"] .content ul li a{display:grid;grid-template-rows:50% 50%;box-shadow:0px 6px 20px rgba(0,0,0,0.1);height:380px;border-radius:8px;-webkit-transition:all .3s;transition:all .3s;overflow:hidden;cursor:pointer;-webkit-text-decoration:none;text-decoration:none;}.lbJNaV[data-section="blog"] .content ul li a:hover{-webkit-transform:translateY(-5px);-ms-transform:translateY(-5px);transform:translateY(-5px);}.lbJNaV[data-section="blog"] .content ul li a div:first-child{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;overflow:hidden;}.lbJNaV[data-section="blog"] .content ul li a div:first-child img{width:100%;}.lbJNaV[data-section="blog"] .content ul li a div:last-child{padding:24px;}.lbJNaV[data-section="blog"] .content ul li a div:last-child strong{color:#000;font-size:24px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}.lbJNaV[data-section="blog"] .content ul li a div:last-child p{margin-top:16px;font-size:16px;color:#6B6C70;line-height:150%;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}@media (max-width:768px){.lbJNaV[data-section="blog"]{padding:80px 0;}.lbJNaV[data-section="blog"] .content{width:100%;padding:0;}.lbJNaV[data-section="blog"] .content ul{grid-template-columns:repeat(4,300px);overflow:auto;padding-bottom:32px;}.lbJNaV[data-section="blog"] .content ul li:first-child{margin-left:24px;}.lbJNaV[data-section="blog"] .content ul li:last-child{margin-right:24px;}}.eMuCth{margin-bottom:52px;height:120px;}@media (max-width:1024px){.eMuCth{height:100px;margin-bottom:38px;}}.NnZKS{position:absolute;top:0;left:-35%;width:auto;height:150% !important;-webkit-transform:translateY(-15%);-ms-transform:translateY(-15%);transform:translateY(-15%);opacity:.03;z-index:-1;}@media (max-width:768px){.NnZKS{height:auto;width:90%;}}.fWNzvI{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;width:1200px;gap:120px;}@media (max-width:1024px){.fWNzvI{width:100%;}}.bFgbjd{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:50%;height:100%;}@media (max-width:1024px){.bFgbjd{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;grid-template-columns:unset;height:100%;width:100%;padding:80px 32px;gap:80px;}.bFgbjd img{width:90% !important;}}.BWeGv{position:-webkit-sticky;position:sticky;height:100vh;top:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.BWeGv.fade{-webkit-animation:fade-in-keyframes 1s;animation:fade-in-keyframes 1s;}.BWeGv img{max-width:100%;width:100%;}@media (max-width:1024px){.BWeGv{margin-top:64px;height:unset;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}}@-webkit-keyframes fade-in-keyframes{from{opacity:0;}to{opacity:1;}}@keyframes fade-in-keyframes{from{opacity:0;}to{opacity:1;}}.dKcwqD{width:100%;background-color:#fff;padding:80px;display:grid;gap:24px;border-radius:16px;box-shadow:0px 5px 10px rgb(0 0 0 / 5%);z-index:1;}.dKcwqD h3{text-align:center;font-size:34px;font-weight:normal;margin-bottom:80px;}@media (max-width:1024px){.dKcwqD h3{margin-bottom:32px;}}@media (max-width:768px){.dKcwqD h3 br{display:none;}}.dKcwqD h3 b{font-weight:bold;}.dKcwqD > div:nth-child(2n) ul{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}@media (max-width:1024px){.dKcwqD{padding:32px;}.dKcwqD h3{font-size:24px;}}@media (max-width:768px){.dKcwqD{box-shadow:unset;padding:0;}}.ibRuVR{-webkit-transform:translateX(-0px);-ms-transform:translateX(-0px);transform:translateX(-0px);width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-transition:all .5s;transition:all .5s;}.ibRuVR li{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;gap:16px;width:950px;padding-right:120px;opacity:.1;}.ibRuVR li.is-actived{opacity:1;}.ibRuVR li h3{font-size:44px;font-weight:bold;}.ibRuVR li p{font-size:24px;color:#6B6C70;margin-bottom:32px;}@media (max-width:1024px){.ibRuVR li{padding-right:5vw;width:90vw;opacity:1;}.ibRuVR li h3{font-size:28px;}.ibRuVR li p{font-size:16px;margin-bottom:24px;line-height:140%;}}.dsXhWq{position:relative;}.dsXhWq button{position:absolute;top:0;left:863.6363636363635px;background-color:#0C0D11;border:unset;width:52px;height:52px;border-radius:50%;cursor:pointer;-webkit-transition:all .3s;transition:all .3s;}.dsXhWq button svg{fill:#fff;font-size:26px;}.dsXhWq button:hover{-webkit-transform:translateY(-3px);-ms-transform:translateY(-3px);transform:translateY(-3px);}.dsXhWq button.left{right:0px;left:-5%;}@media (max-width:1024px){.dsXhWq button{display:none;}}.knVXcq{position:absolute;left:0;right:unset;top:0;opacity:.3;-webkit-transform:unset;-ms-transform:unset;transform:unset;}@media (max-width:1024px){.knVXcq{width:200px;}}.cjWCxd{position:absolute;left:unset;right:0;top:0;opacity:.3;-webkit-transform:rotateY(180deg);-ms-transform:rotateY(180deg);transform:rotateY(180deg);}@media (max-width:1024px){.cjWCxd{width:200px;}}.jWlfZZ{position:relative;}.dlAHCg{position:absolute;bottom:0;right:0;width:100%;height:4px;}.dlAHCg div{position:absolute;height:100%;right:unset;left:0px;}.dlAHCg div:first-child{background-color:#C5E0EB;width:45vw;}.dlAHCg div:nth-child(2n){background-color:#2AB1B4;width:30vw;}.dlAHCg div:last-child{background-color:#1B90B3;width:15vw;}.gtvAgo{position:absolute;bottom:0;right:0;width:100%;height:4px;}.gtvAgo div{position:absolute;height:100%;right:0px;left:unset;}.gtvAgo div:first-child{background-color:#C5E0EB;width:45vw;}.gtvAgo div:nth-child(2n){background-color:#2AB1B4;width:30vw;}.gtvAgo div:last-child{background-color:#1B90B3;width:15vw;}.imteWp{font-size:42px;color:#2D2D36;font-weight:600;margin-bottom:24px;margin-right:0;margin-top:0;margin-left:0;text-align:left;line-height:120%;}.eHysIn{font-size:28px;color:#67696C;font-weight:400;margin-bottom:48px;margin-right:0;margin-top:0;margin-left:0;text-align:left;line-height:120%;}.gEUrNN{font-size:38px;color:#2D2D36;font-weight:600;margin-bottom:16px;margin-right:0;margin-top:0;margin-left:0;text-align:left;line-height:120%;}.gjzLMf{font-size:24px;color:#67696C;font-weight:400;margin-bottom:0;margin-right:0;margin-top:0;margin-left:0;text-align:left;line-height:120%;}.iqlrme{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:100vh;}.iqlrme h5{color:#A2BABA;font-weight:bolder;font-size:18px;-webkit-letter-spacing:5px;-moz-letter-spacing:5px;-ms-letter-spacing:5px;letter-spacing:5px;margin-bottom:16px;}.iqlrme img{width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;height:100%;margin:auto;}@media (max-width:1024px){.iqlrme{height:unset;}.iqlrme h5{font-size:14px;}.iqlrme h3{font-size:24px;}.iqlrme p{font-size:16px;}}.jDmlwd{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-flex:1;-ms-flex:1;flex:1;}.jDmlwd ul{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}.jDmlwd:not(:last-child){margin-bottom:120px;}.jDmlwd h4{font-size:28px;font-weight:normal;color:#0C0D11;margin-bottom:32px;}.jDmlwd ul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;gap:80px;}.jDmlwd ul > div{-webkit-flex:1;-ms-flex:1;flex:1;}.jDmlwd ul img{max-width:80%;}@media (max-width:1024px){.jDmlwd ul{-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}}@media (max-width:1024px){.jDmlwd h4{font-size:22px;margin-bottom:24px;}}.TVPFQ{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-flex:1;-ms-flex:1;flex:1;}.TVPFQ ul{-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;}.TVPFQ:not(:last-child){margin-bottom:120px;}.TVPFQ h4{font-size:28px;font-weight:normal;color:#0C0D11;margin-bottom:32px;}.TVPFQ ul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;gap:80px;}.TVPFQ ul > div{-webkit-flex:1;-ms-flex:1;flex:1;}.TVPFQ ul img{max-width:80%;}@media (max-width:1024px){.TVPFQ ul{-webkit-flex-direction:column !important;-ms-flex-direction:column !important;flex-direction:column !important;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}}@media (max-width:1024px){.TVPFQ h4{font-size:22px;margin-bottom:24px;}}.eQELZv{display:grid;grid-auto-flow:column;-webkit-align-items:start;-webkit-box-align:start;-ms-flex-align:start;align-items:start;-webkit-box-pack:start;-webkit-justify-content:start;-ms-flex-pack:start;justify-content:start;gap:24px;background-color:#F5F5F5;padding:24px 48px 24px 24px;border-radius:8px;opacity:1;cursor:pointer;-webkit-transition:all .3s;transition:all .3s;}.eQELZv:hover{-webkit-transform:translateY(-2px);-ms-transform:translateY(-2px);transform:translateY(-2px);}.eQELZv svg{width:28px;height:auto;}.eQELZv h5{font-size:24px;color:#0C0D11;font-weight:500;margin-bottom:12px;}.eQELZv p.subtitle{display:block;color:#67696C;font-size:21px;line-height:120%;cursor:auto;}@media (max-width:1024px){.eQELZv{padding:16px;}.eQELZv h5{font-size:20px;line-height:120%;}.eQELZv p{font-size:18px !important;line-height:140% !important;}}.cLVOAq{display:grid;grid-auto-flow:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-webkit-justify-content:start;-ms-flex-pack:start;justify-content:start;gap:24px;background-color:#F5F5F5;padding:24px 48px 24px 24px;border-radius:8px;opacity:.5;cursor:pointer;-webkit-transition:all .3s;transition:all .3s;}.cLVOAq:hover{-webkit-transform:translateY(-2px);-ms-transform:translateY(-2px);transform:translateY(-2px);}.cLVOAq svg{width:28px;height:auto;}.cLVOAq h5{font-size:24px;color:#0C0D11;font-weight:500;margin-bottom:0;}.cLVOAq p.subtitle{display:none;color:#67696C;font-size:21px;line-height:120%;cursor:auto;}@media (max-width:1024px){.cLVOAq{padding:16px;}.cLVOAq h5{font-size:20px;line-height:120%;}.cLVOAq p{font-size:18px !important;line-height:140% !important;}}.ckZlIt{display:block;margin-bottom:16px;}.essHgo{text-align:center;-webkit-flex:1;-ms-flex:1;flex:1;}@media (max-width:1024px){.essHgo img{width:auto;max-height:320px;margin:32px 0;}}</style></head><body><div id="__next"><div class="Home__Container-sc-hzp0ft-0 fXsskH"><section data-section="principal" class="Home__Section-sc-hzp0ft-1 lbJNaV"><div class="general__Box-sc-xso927-0 jWlfZZ"><img src="./Axenya _ Ecossistema Inteligente de Saúde_files/1668884676-logo-axenya.svg" alt="Logo de fundo Axenya" class="Home__LogoDetail-sc-hzp0ft-3 NnZKS"><img src="./Axenya _ Ecossistema Inteligente de Saúde_files/1668884676-logo-axenya.svg" alt="Logo Axenya" class="Home__LogoAxenya-sc-hzp0ft-2 eMuCth"><h1 class="text__Text-sc-1hdwp4t-0 imteWp">Reinventamos a Gestão de Saúde Corporativa, com  <b>+ inteligência</b></h1><h2 color="#67696C" class="text__Text-sc-1hdwp4t-0 eHysIn">Alavancamos o poder dos dados para entregar saúde personalizada, maior controle, eficiência e redução de custos</h2><a href="https://www.axenya.com/#form" title="Ir para o formulário">Fale com a gente</a></div><div orientation="left" class="styles__Box-sc-1hx98tf-0 dlAHCg"><div></div><div></div><div></div></div></section><section data-section="apresentation" class="Home__Section-sc-hzp0ft-1 lbJNaV"><img src="./Axenya _ Ecossistema Inteligente de Saúde_files/background-pattern.png" alt="Backgroun pattern" opacity=".3" class="Home__Detail-sc-hzp0ft-15 knVXcq"><div class="Home__SlideContent-sc-hzp0ft-4 fWNzvI"><div class="Home__Slide-sc-hzp0ft-5 bFgbjd"><div><div class="Home__SlideBox-sc-hzp0ft-6 iqlrme"><h5>SOMOS ÚNICOS</h5><h3 class="text__Text-sc-1hdwp4t-0 gEUrNN">O primeiro ecossistema inteligente de saúde</h3><p color="#67696C" class="text__Text-sc-1hdwp4t-0 gjzLMf">Desenhamos precisamente a solução para a gestão da saúde corporativa da sua empresa.</p></div></div><div><div class="Home__SlideBox-sc-hzp0ft-6 iqlrme"><h5>CAUSAMOS IMPACTO</h5><h3 class="text__Text-sc-1hdwp4t-0 gEUrNN">Geramos melhores resultados para todo o sistema</h3><p color="#67696C" class="text__Text-sc-1hdwp4t-0 gjzLMf">Cuidamos melhor das pessoas, conquistamos melhores resultados clínicos e reduzimos os custos com saúde das empresas.</p></div></div></div><div class="Home__SlideImage-sc-hzp0ft-7 BWeGv"><img src="./Axenya _ Ecossistema Inteligente de Saúde_files/1671825051-flywheel.png"></div></div><div orientation="right" class="styles__Box-sc-1hx98tf-0 gtvAgo"><div></div><div></div><div></div></div></section><section data-section="soluctions" class="Home__Section-sc-hzp0ft-1 lbJNaV"><img src="./Axenya _ Ecossistema Inteligente de Saúde_files/background-pattern.png" alt="Backgroun pattern" opacity=".3" class="Home__Detail-sc-hzp0ft-15 cjWCxd"><div class="Home__SoluctionsBox-sc-hzp0ft-8 dKcwqD"><h3>Solução de ponta-a-ponta, entregando valor em <br><b>todas as etapas</b> da jornada de saúde!</h3><div class="Home__SoluctionsBlock-sc-hzp0ft-9 jDmlwd"><ul><div><h4>Hub operacional</h4><li class="Home__SoluctionsItem-sc-hzp0ft-11 ckZlIt"><div open="" class="Home__SoluctionsInfo-sc-hzp0ft-10 eQELZv"><div><p><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.9997 30.6666H4.33301C2.67967 30.6666 1.33301 29.3199 1.33301 27.6666V4.33325C1.33301 2.67992 2.67967 1.33325 4.33301 1.33325H27.6663C29.3197 1.33325 30.6663 2.67992 30.6663 4.33325V21.9999C30.6663 22.3666 30.3663 22.6666 29.9997 22.6666C29.633 22.6666 29.333 22.3666 29.333 21.9999V4.33325C29.333 3.41325 28.5863 2.66659 27.6663 2.66659H4.33301C3.41301 2.66659 2.66634 3.41325 2.66634 4.33325V27.6666C2.66634 28.5866 3.41301 29.3333 4.33301 29.3333H21.9997C22.3663 29.3333 22.6663 29.6333 22.6663 29.9999C22.6663 30.3666 22.3663 30.6666 21.9997 30.6666Z" fill="black"></path>
+    <path d="M21.9997 30.6532C21.913 30.6532 21.8263 30.6332 21.7397 30.5999C21.4863 30.4932 21.3197 30.2466 21.3197 29.9732V23.7732C21.3197 22.4199 22.4197 21.3199 23.773 21.3199H29.9797C30.253 21.3199 30.4997 21.4866 30.6063 21.7399C30.713 21.9932 30.653 22.2866 30.4597 22.4799L22.4797 30.4532C22.3463 30.5866 22.173 30.6532 21.9997 30.6532ZM23.7797 22.6799C23.173 22.6799 22.6797 23.1732 22.6797 23.7799V28.3399L28.3463 22.6733H23.7797V22.6799Z" fill="black"></path>
+  </svg></p></div><div><h5>Acompanhe as demandas em tempo real</h5><p class="subtitle">Crie e acompanhe as movimentações dos seus beneficiários e solicite outros pedidos, como apoio na liberação de exames, cirurgias e outros procedimentos através do nosso Hub.</p></div></div></li><li class="Home__SoluctionsItem-sc-hzp0ft-11 ckZlIt"><div class="Home__SoluctionsInfo-sc-hzp0ft-10 cLVOAq"><div><p><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.313 26.7599H1.99967C1.63301 26.7599 1.33301 26.4599 1.33301 26.0933V22.8799C1.33301 22.0599 1.71301 21.2732 2.46634 20.5399C3.14634 19.8866 4.11967 19.2932 5.36634 18.7732C7.74634 17.7799 10.5463 17.3399 12.2597 17.3399C12.7063 17.3399 13.213 17.3733 13.7597 17.4266C14.0197 17.4533 14.2397 17.6333 14.3197 17.8799C14.3997 18.1266 14.333 18.3999 14.1397 18.5799C12.353 20.2399 11.9797 22.0599 11.9797 23.2999V26.0933C11.9797 26.4599 11.6863 26.7599 11.313 26.7599ZM2.66634 25.4266H10.6463V23.2999C10.6463 22.2733 10.8797 20.4599 12.253 18.6733C10.6663 18.6733 8.08634 19.0866 5.87967 20.0066C4.79967 20.4533 3.93967 20.9733 3.39301 21.4999C2.90634 21.9733 2.66634 22.4266 2.66634 22.8799V25.4266ZM29.9997 26.6666H15.333C14.9663 26.6666 14.6663 26.3666 14.6663 25.9999V23.3932C14.6663 22.7932 14.9463 22.2199 15.493 21.6866C15.993 21.1999 16.7063 20.7666 17.6197 20.3932C19.3663 19.6666 21.413 19.3399 22.6663 19.3399C23.9197 19.3399 25.973 19.6666 27.7197 20.3932C28.6263 20.7666 29.3397 21.2066 29.8397 21.6866C30.393 22.2199 30.6663 22.7999 30.6663 23.3932V25.9999C30.6663 26.3666 30.3663 26.6666 29.9997 26.6666ZM15.9997 25.3333H29.333V23.3932C29.333 23.1666 29.193 22.9132 28.913 22.6466C28.5397 22.2866 27.953 21.9333 27.2063 21.6266C25.6397 20.9733 23.753 20.6799 22.6663 20.6799C21.5797 20.6799 19.6997 20.9799 18.1263 21.6266C17.3797 21.9333 16.793 22.2866 16.4197 22.6466C16.1397 22.9132 15.9997 23.1666 15.9997 23.3932V25.3333ZM22.6863 15.9399C20.4997 15.9399 18.7197 14.1599 18.7197 11.9732C18.7197 9.78656 20.4997 8.00659 22.6863 8.00659C24.873 8.00659 26.653 9.78656 26.653 11.9732C26.653 14.1599 24.873 15.9399 22.6863 15.9399ZM22.6863 9.33325C21.233 9.33325 20.053 10.5133 20.053 11.9666C20.053 13.4199 21.233 14.5999 22.6863 14.5999C24.1397 14.5999 25.3197 13.4199 25.3197 11.9666C25.3197 10.5199 24.1397 9.33325 22.6863 9.33325ZM11.333 14.6666C8.75967 14.6666 6.66634 12.5733 6.66634 9.99992C6.66634 7.42659 8.75967 5.33325 11.333 5.33325C13.9063 5.33325 15.9997 7.42659 15.9997 9.99992C15.9997 12.5733 13.9063 14.6666 11.333 14.6666ZM11.333 6.66659C9.49301 6.66659 7.99967 8.15992 7.99967 9.99992C7.99967 11.8399 9.49301 13.3333 11.333 13.3333C13.173 13.3333 14.6663 11.8399 14.6663 9.99992C14.6663 8.15992 13.173 6.66659 11.333 6.66659Z" fill="black"></path>
+  </svg></p></div><div><h5>Acesse as informações de todos os beneficiários rapidamente</h5><p class="subtitle">Visualize e edite de forma rápida e fácil todos os detalhes dos produtos contratados para cada beneficiário através de uma lista com as informações mais importantes da sua população.</p></div></div></li><li class="Home__SoluctionsItem-sc-hzp0ft-11 ckZlIt"><div class="Home__SoluctionsInfo-sc-hzp0ft-10 cLVOAq"><div><p><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M26.9203 30.6599H9.087C7.75366 30.6599 6.67367 29.5733 6.67367 28.2466V3.7466C6.67367 2.41327 7.76033 1.33325 9.087 1.33325H21.067L29.3403 9.57326V28.2466C29.3337 29.5799 28.247 30.6599 26.9203 30.6599ZM9.08032 2.65993C8.48032 2.65993 8.00033 3.1466 8.00033 3.73993V28.2399C8.00033 28.8399 8.48699 29.3199 9.08032 29.3199H26.9137C27.5137 29.3199 27.9937 28.8333 27.9937 28.2399V10.1199L20.507 2.65993H9.08032Z" fill="black"></path>
+    <path d="M28.6403 10.6599H22.4403C21.0937 10.6599 19.9937 9.55992 19.9937 8.21326V2.00659C19.9937 1.73993 20.1536 1.49325 20.407 1.39325C20.6536 1.28658 20.9403 1.34658 21.1336 1.53992L29.107 9.51992C29.3003 9.71325 29.3537 9.99994 29.2537 10.2466C29.1537 10.4933 28.9136 10.6599 28.6403 10.6599ZM21.3337 3.62659V8.21993C21.3337 8.83326 21.8337 9.33325 22.447 9.33325H27.0337L21.3337 3.62659Z" fill="black"></path>
+    <path d="M4.66699 30.6599C3.56699 30.6599 2.66699 29.5733 2.66699 28.2466V3.7466C2.66699 2.41327 3.56699 1.33325 4.66699 1.33325C5.03366 1.33325 5.33366 1.63325 5.33366 1.99992C5.33366 2.36659 5.03366 2.66659 4.66699 2.66659C4.35366 2.66659 4.00033 3.11327 4.00033 3.7466V28.2466C4.00033 28.8866 4.35366 29.3266 4.66699 29.3266C5.03366 29.3266 5.33366 29.6266 5.33366 29.9933C5.33366 30.3599 5.03366 30.6599 4.66699 30.6599Z" fill="black"></path>
+    <path d="M24.667 25.3266H11.3337C10.967 25.3266 10.667 25.0266 10.667 24.6599C10.667 24.2933 10.967 23.9933 11.3337 23.9933H24.667C25.0337 23.9933 25.3337 24.2933 25.3337 24.6599C25.3337 25.0266 25.0337 25.3266 24.667 25.3266Z" fill="black"></path>
+    <path d="M24.667 21.3266H11.3337C10.967 21.3266 10.667 21.0266 10.667 20.6599C10.667 20.2933 10.967 19.9933 11.3337 19.9933H24.667C25.0337 19.9933 25.3337 20.2933 25.3337 20.6599C25.3337 21.0266 25.0337 21.3266 24.667 21.3266Z" fill="black"></path>
+    <path d="M24.667 17.3266H11.3337C10.967 17.3266 10.667 17.0266 10.667 16.6599C10.667 16.2933 10.967 15.9933 11.3337 15.9933H24.667C25.0337 15.9933 25.3337 16.2933 25.3337 16.6599C25.3337 17.0266 25.0337 17.3266 24.667 17.3266Z" fill="black"></path>
+  </svg></p></div><div><h5>Encontre facilmente seus contratos e documentos de forma organizada</h5><p class="subtitle">Visualize seus contratos, receba suas faturas com rateio inteligente e tenha suas cotações rapidamente de forma organizada no repositório de documentos do Hub.</p></div></div></li></div><div class="Home__SoluctionsImage-sc-hzp0ft-12 essHgo"><img src="./Axenya _ Ecossistema Inteligente de Saúde_files/1671823412-tickets.png"></div></ul></div><div class="Home__SoluctionsBlock-sc-hzp0ft-9 TVPFQ"><ul><div><h4>Painel de controle</h4><li class="Home__SoluctionsItem-sc-hzp0ft-11 ckZlIt"><div open="" class="Home__SoluctionsInfo-sc-hzp0ft-10 eQELZv"><div><p><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20.9137 30.6681C20.5603 30.6681 20.2137 30.5414 19.927 30.2881C19.4137 29.8348 19.2737 29.1215 19.5803 28.5081C20.6003 26.4615 21.4003 23.7548 20.467 22.5414C18.987 22.7414 17.7603 22.7215 16.727 22.4881C15.427 22.1948 14.4403 21.5415 13.867 20.5881C13.5337 20.0281 13.3403 19.3815 13.287 18.6615C11.1937 21.8015 11.6403 25.7815 12.5003 28.7682C12.6737 29.3748 12.4537 30.0014 11.947 30.3748C11.4403 30.7481 10.7737 30.7615 10.247 30.4148C10.0203 30.2615 4.66699 26.6148 4.66699 20.9748C4.66699 16.3948 7.23366 13.9815 9.71366 11.6481C12.1803 9.32812 14.5137 7.13479 14.5137 2.82146C14.5137 2.23479 14.8403 1.72145 15.3737 1.47478C15.9003 1.22811 16.5137 1.30815 16.9603 1.68149C21.2137 5.24815 28.2937 13.2748 27.887 20.7548C27.6737 24.5881 25.6137 27.8415 21.7537 30.4148C21.4803 30.5881 21.1937 30.6681 20.9137 30.6681ZM20.7137 21.1748C20.8737 21.1748 21.0337 21.2348 21.1537 21.3415C23.347 23.2815 21.6203 27.4215 20.7737 29.1148C20.7603 29.1415 20.7203 29.2148 20.8137 29.2948C20.907 29.3748 20.9737 29.3281 21.0003 29.3081C24.4937 26.9814 26.3537 24.0815 26.5403 20.6815C26.927 13.7148 19.8737 5.87484 16.087 2.70151C16.0403 2.66151 15.9803 2.65482 15.9203 2.68149C15.8603 2.70815 15.8337 2.75479 15.8337 2.82146C15.8337 7.71479 13.1803 10.2081 10.6137 12.6214C8.23366 14.8614 5.98699 16.9748 5.98699 20.9748C5.98699 25.9081 10.7737 29.1681 10.9737 29.3081C11.0337 29.3481 11.0937 29.3481 11.147 29.3014C11.207 29.2614 11.227 29.2014 11.207 29.1348C9.62033 23.5748 10.487 19.0682 13.727 16.1082C13.947 15.9082 14.2737 15.8748 14.527 16.0282C14.7803 16.1815 14.9003 16.4882 14.8203 16.7748C14.4737 18.0548 14.5337 19.1348 15.0003 19.9015C15.387 20.5481 16.067 20.9815 17.0137 21.1948C17.9603 21.4082 19.1337 21.4015 20.607 21.1815C20.647 21.1748 20.6803 21.1748 20.7137 21.1748Z" fill="black"></path>
+  </svg></p></div><div><h5>Acesse a sinistralidade e todos os dados de utilização dos planos de saúde da sua empresa</h5><p class="subtitle">Acesse nossos relatórios inteligentes para entender como os benefícios estão sendo utilizados para tomar as melhores decisões de contratação de produtos e ações de saúde na sua empresa.</p></div></div></li><li class="Home__SoluctionsItem-sc-hzp0ft-11 ckZlIt"><div class="Home__SoluctionsInfo-sc-hzp0ft-10 cLVOAq"><div><p><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M23.333 25.3333C22.9663 25.3333 22.6663 25.0333 22.6663 24.6666V16.6666C22.6663 16.2999 22.9663 15.9999 23.333 15.9999C23.6997 15.9999 23.9997 16.2999 23.9997 16.6666V24.6666C23.9997 25.0399 23.6997 25.3333 23.333 25.3333ZM15.9997 25.3333C15.633 25.3333 15.333 25.0333 15.333 24.6666V7.33325C15.333 6.96658 15.633 6.66658 15.9997 6.66658C16.3663 6.66658 16.6663 6.96658 16.6663 7.33325V24.6666C16.6663 25.0399 16.3663 25.3333 15.9997 25.3333ZM8.66634 25.3333C8.29967 25.3333 7.99967 25.0333 7.99967 24.6666V11.3333C7.99967 10.9666 8.29967 10.6666 8.66634 10.6666C9.03301 10.6666 9.33301 10.9666 9.33301 11.3333V24.6666C9.33301 25.0399 9.03301 25.3333 8.66634 25.3333Z" fill="black"></path>
+    <path d="M27.6663 30.6666H4.33301C2.67967 30.6666 1.33301 29.3199 1.33301 27.6666V4.33325C1.33301 2.67992 2.67967 1.33325 4.33301 1.33325H27.6663C29.3197 1.33325 30.6663 2.67992 30.6663 4.33325V27.6666C30.6663 29.3266 29.3197 30.6666 27.6663 30.6666ZM4.33301 2.66659C3.41301 2.66659 2.66634 3.41325 2.66634 4.33325V27.6666C2.66634 28.5866 3.41301 29.3333 4.33301 29.3333H27.6663C28.5863 29.3333 29.333 28.5866 29.333 27.6666V4.33325C29.333 3.41325 28.5863 2.66659 27.6663 2.66659H4.33301Z" fill="black"></path>
+  </svg></p></div><div><h5>Tenha acesso de forma segura aos dados de saúde da sua população</h5><p class="subtitle">Entenda como está a saúde da sua população em tempo real com análises demográficas, grupos de risco, análises preventivas e preditivas, rankings de patologias e outros dados relevantes.</p></div></div></li><li class="Home__SoluctionsItem-sc-hzp0ft-11 ckZlIt"><div class="Home__SoluctionsInfo-sc-hzp0ft-10 cLVOAq"><div><p><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.33301 15.9999C1.33301 7.89974 7.8995 1.33325 15.9997 1.33325C19.8895 1.33325 23.62 2.87848 26.3706 5.62902C29.1199 8.37832 30.665 12.1067 30.6663 15.9947L30.6664 15.9999C30.6664 17.926 30.287 19.8332 29.5499 21.6126C28.8129 23.3921 27.7325 25.0089 26.3706 26.3708C26.3695 26.3719 26.3685 26.3729 26.3674 26.374C23.7135 29.0263 20.0481 30.6666 15.9997 30.6666C7.8995 30.6666 1.33301 24.1001 1.33301 15.9999ZM24.9446 25.8877L15.5313 16.4744L15.5283 16.4713C15.5093 16.4524 15.4917 16.4324 15.4753 16.4116C15.3836 16.2948 15.333 16.1498 15.333 15.9997V2.68296C8.27893 3.03032 2.66634 8.85967 2.66634 15.9999C2.66634 23.3637 8.63588 29.3333 15.9997 29.3333C19.4417 29.3333 22.5791 28.029 24.9446 25.8877ZM17.6092 16.6666H29.3163C29.2401 18.1898 28.903 19.6903 28.3181 21.1024C27.7332 22.5144 26.9105 23.8138 25.8874 24.9448L17.6092 16.6666ZM29.3163 15.3332L16.6663 15.3333V2.68325C19.9598 2.848 23.0849 4.22893 25.4278 6.57183C27.7707 8.91472 29.1516 12.0398 29.3163 15.3332Z" fill="black"></path>
+  </svg></p></div><div><h5>Acompanhe com transparência os dados e características da sua operação</h5><p class="subtitle">Metrificamos em tempo real todos os dados relacionados a operação e gestão dos benefícios de saúde da sua empresa, como quantidade de demandas, solicitações mais frequentes, tempo médio de resolução, entre outros.</p></div></div></li></div><div class="Home__SoluctionsImage-sc-hzp0ft-12 essHgo"><img src="./Axenya _ Ecossistema Inteligente de Saúde_files/1671824104-dados-de-sinistralidade-e-uso-do-plano-de-saude.png"></div></ul></div><div class="Home__SoluctionsBlock-sc-hzp0ft-9 TVPFQ"><ul><div><h4>App da Axenya</h4><li class="Home__SoluctionsItem-sc-hzp0ft-11 ckZlIt"><div open="" class="Home__SoluctionsInfo-sc-hzp0ft-10 eQELZv"><div><p><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1.99967 30.6666C1.91301 30.6666 1.81967 30.6466 1.73967 30.6132C1.49301 30.5066 1.33301 30.2666 1.33301 29.9999V4.79993C1.33301 2.88659 2.88634 1.33325 4.79967 1.33325H27.1997C29.113 1.33325 30.6663 2.88659 30.6663 4.79993V21.8666C30.6663 23.7799 29.113 25.3333 27.1997 25.3333H7.86634L2.45968 30.4799C2.33301 30.6066 2.16634 30.6666 1.99967 30.6666ZM4.79967 2.66659C3.62634 2.66659 2.66634 3.62659 2.66634 4.79993V28.4466L7.13968 24.1866C7.26635 24.0666 7.42634 23.9999 7.59967 23.9999H27.1997C28.373 23.9999 29.333 23.0399 29.333 21.8666V4.79993C29.333 3.62659 28.373 2.66659 27.1997 2.66659H4.79967Z" fill="black"></path>
+  </svg></p></div><div><h5>Nossa equipe de saúde sempre à disposição</h5><p class="subtitle">Equipe de saúde multidisciplinar com médicos, enfermeiros, nutricionistas psicólogos e coaches de saúde disponíveis através do chat e teleconsulta no aplicativo.</p></div></div></li><li class="Home__SoluctionsItem-sc-hzp0ft-11 ckZlIt"><div class="Home__SoluctionsInfo-sc-hzp0ft-10 cLVOAq"><div><p><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.993 21.3333C15.9663 21.3333 15.9463 21.3333 15.9197 21.3266C15.6663 21.3 15.4463 21.1266 15.3663 20.8866L12.5597 13.0266L10.593 16.96C10.4797 17.1866 10.2463 17.3266 9.99967 17.3266H1.99967C1.63301 17.3266 1.33301 17.0266 1.33301 16.66C1.33301 16.2933 1.63301 15.9933 1.99967 15.9933H9.58634L12.0663 11.0266C12.1863 10.7866 12.4463 10.6466 12.6997 10.66C12.9663 10.6733 13.1997 10.8466 13.2863 11.1L16.1597 19.1333L18.7597 14.9666C18.8863 14.76 19.1063 14.64 19.3597 14.6533C19.5997 14.6666 19.8197 14.8066 19.9263 15.0266L21.713 18.6533H29.993C30.3597 18.6533 30.6597 18.9533 30.6597 19.32C30.6597 19.6866 30.3597 19.9866 29.993 19.9866H21.293C21.0397 19.9866 20.8063 19.84 20.693 19.6133L19.253 16.6866L16.553 21.0066C16.433 21.22 16.2197 21.3333 15.993 21.3333Z" fill="black"></path>
+    <path d="M15.9932 28C15.4998 28 15.0198 27.84 14.6131 27.54C10.2665 24.34 8.36648 22.1333 7.31982 20.7467C5.04648 17.7467 3.95981 14.66 3.98648 11.3133C4.02648 7.28 7.03983 4 10.7065 4C13.1932 4 14.9398 5.40667 15.9865 6.60001C17.4865 4.89334 19.3065 4 21.2732 4C24.9398 4 27.9532 7.28 27.9932 11.3133C28.0265 14.66 26.9398 17.7467 24.6665 20.7467C23.6265 22.1267 21.7332 24.3333 17.3732 27.54C16.9665 27.8467 16.4932 28 15.9932 28ZM10.7131 5.33333C7.77315 5.33333 5.35982 8.02 5.32649 11.3267C5.29982 14.3733 6.29982 17.1933 8.38649 19.9467C9.38649 21.2667 11.1998 23.3733 15.4132 26.4733C15.7665 26.7333 16.2332 26.7333 16.5798 26.4733C20.8065 23.3667 22.6132 21.26 23.6065 19.9467C25.6932 17.1933 26.6932 14.3733 26.6598 11.3267C26.6332 8.02 24.2132 5.33333 21.2732 5.33333C19.6665 5.33333 18.2198 6.06667 16.9732 7.51334C16.8598 7.64667 16.7198 7.75333 16.5598 7.83333C16.1465 8.02 15.7865 8 15.4532 7.84667C15.2732 7.75334 15.1332 7.65334 15.0132 7.51334C14.1598 6.52 12.7198 5.33333 10.7131 5.33333Z" fill="black"></path>
+  </svg></p></div><div><h5>Monitoramento remoto 24/7/365</h5><p class="subtitle">Monitoramento em tempo real de diversos sinais de saúde como pressão sanguínea, glicose no sangue, peso, atividade física, refeições, que podem ser coletados a partir de +450 conexões com apps e dispositivos de saúde.</p></div></div></li><li class="Home__SoluctionsItem-sc-hzp0ft-11 ckZlIt"><div class="Home__SoluctionsInfo-sc-hzp0ft-10 cLVOAq"><div><p><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9997 14H10.6663V18H13.9997V21.3333H17.9997V18H21.333V14H17.9997V10.6667H13.9997V14ZM15.333 12V15.3333H11.9997V16.6667H15.333V20H16.6663V16.6667H19.9997V15.3333H16.6663V12H15.333Z" fill="black"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6663 2C20.6663 2.87081 20.1098 3.61164 19.333 3.8862V6.66667H22.6663C24.1391 6.66667 25.333 7.86057 25.333 9.33333V22.6667C25.333 24.1394 24.1391 25.3333 22.6663 25.3333H20.6663V28.3333C20.6663 28.5174 20.8156 28.6667 20.9997 28.6667C21.9201 28.6667 22.6663 29.4129 22.6663 30.3333V31.3333C22.6663 31.7015 22.3679 32 21.9997 32C21.6315 32 21.333 31.7015 21.333 31.3333V30.3333C21.333 30.1492 21.1838 30 20.9997 30C20.0792 30 19.333 29.2538 19.333 28.3333V25.3333H16.6663V27.6667C16.6663 28.0349 16.3679 28.3333 15.9997 28.3333C15.6315 28.3333 15.333 28.0349 15.333 27.6667V25.3333H12.6663V29.3333C12.6663 29.7015 12.3679 30 11.9997 30C11.6315 30 11.333 29.7015 11.333 29.3333V25.3333H9.33301C7.86025 25.3333 6.66634 24.1394 6.66634 22.6667V16.6667H5.2192C4.94465 17.4435 4.20382 18 3.33301 18C2.22844 18 1.33301 17.1046 1.33301 16C1.33301 14.8954 2.22844 14 3.33301 14C4.20382 14 4.94465 14.5565 5.2192 15.3333H6.66634V9.33333C6.66634 7.86057 7.86025 6.66667 9.33301 6.66667H12.6663V2C12.6663 1.63181 12.9648 1.33333 13.333 1.33333C13.7012 1.33333 13.9997 1.63181 13.9997 2V6.66667H17.9997V3.8862C17.2229 3.61164 16.6663 2.87081 16.6663 2C16.6663 0.895431 17.5618 0 18.6663 0C19.7709 0 20.6663 0.895431 20.6663 2ZM18.6663 2.66667C19.0345 2.66667 19.333 2.36819 19.333 2C19.333 1.63181 19.0345 1.33333 18.6663 1.33333C18.2982 1.33333 17.9997 1.63181 17.9997 2C17.9997 2.36819 18.2982 2.66667 18.6663 2.66667ZM3.99967 16C3.99967 15.6318 3.7012 15.3333 3.33301 15.3333C2.96482 15.3333 2.66634 15.6318 2.66634 16C2.66634 16.3682 2.96482 16.6667 3.33301 16.6667C3.7012 16.6667 3.99967 16.3682 3.99967 16ZM7.99967 22.6667C7.99967 23.403 8.59663 24 9.33301 24H22.6663C23.4027 24 23.9997 23.403 23.9997 22.6667V9.33333C23.9997 8.59695 23.4027 8 22.6663 8H9.33301C8.59663 8 7.99967 8.59695 7.99967 9.33333V22.6667Z" fill="black"></path>
+    <path d="M3.99967 9.33333C3.99967 6.38782 6.38749 4 9.33301 4H9.99967C10.3679 4 10.6663 4.29848 10.6663 4.66667C10.6663 5.03486 10.3679 5.33333 9.99967 5.33333H9.33301C7.12387 5.33333 5.33301 7.12419 5.33301 9.33333V11.6667C5.33301 12.0349 5.03453 12.3333 4.66634 12.3333C4.29815 12.3333 3.99967 12.0349 3.99967 11.6667V9.33333Z" fill="black"></path>
+    <path d="M21.6663 4.66667C21.6663 4.29848 21.9648 4 22.333 4H22.6663C25.6119 4 27.9997 6.38782 27.9997 9.33333V10.3333C27.9997 10.7015 27.7012 11 27.333 11C26.9648 11 26.6663 10.7015 26.6663 10.3333V9.33333C26.6663 7.12419 24.8755 5.33333 22.6663 5.33333H22.333C21.9648 5.33333 21.6663 5.03486 21.6663 4.66667Z" fill="black"></path>
+    <path d="M4.66634 19.6667C5.03453 19.6667 5.33301 19.9651 5.33301 20.3333V22.6667C5.33301 24.8758 7.12387 26.6667 9.33301 26.6667H9.66634C10.0345 26.6667 10.333 26.9651 10.333 27.3333C10.333 27.7015 10.0345 28 9.66634 28H9.33301C6.38749 28 3.99967 25.6122 3.99967 22.6667V20.3333C3.99967 19.9651 4.29815 19.6667 4.66634 19.6667Z" fill="black"></path>
+    <path d="M27.333 21C27.7012 21 27.9997 21.2985 27.9997 21.6667V22.6667C27.9997 25.6122 25.6119 28 22.6663 28H22.333C21.9648 28 21.6663 27.7015 21.6663 27.3333C21.6663 26.9651 21.9648 26.6667 22.333 26.6667H22.6663C24.8755 26.6667 26.6663 24.8758 26.6663 22.6667V21.6667C26.6663 21.2985 26.9648 21 27.333 21Z" fill="black"></path>
+    <path d="M24.6663 14C24.6663 13.6318 24.9648 13.3333 25.333 13.3333H29.9997C30.3679 13.3333 30.6663 13.6318 30.6663 14C30.6663 14.3682 30.3679 14.6667 29.9997 14.6667H25.333C24.9648 14.6667 24.6663 14.3682 24.6663 14Z" fill="black"></path>
+    <path d="M25.333 17.3333C24.9648 17.3333 24.6663 17.6318 24.6663 18C24.6663 18.3682 24.9648 18.6667 25.333 18.6667H27.9997C28.3679 18.6667 28.6663 18.3682 28.6663 18C28.6663 17.6318 28.3679 17.3333 27.9997 17.3333H25.333Z" fill="black"></path>
+  </svg></p></div><div><h5>Inteligência artificial</h5><p class="subtitle">Cruzamento dos dados de saúde monitorados, utilização do plano de saúde, medicamentos e diversos outros dados para identificar possíveis problemas de saúde previamente e realizar o direcionamento correto para cada indivíduo.</p></div></div></li><li class="Home__SoluctionsItem-sc-hzp0ft-11 ckZlIt"><div class="Home__SoluctionsInfo-sc-hzp0ft-10 cLVOAq"><div><p><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 6.66658C8 5.93021 8.59695 5.33325 9.33333 5.33325H22.6667C23.403 5.33325 24 5.93021 24 6.66658V15.9999C24 16.7363 23.403 17.3333 22.6667 17.3333H9.33333C8.59695 17.3333 8 16.7363 8 15.9999V6.66658ZM9.33333 6.66658H22.6667V15.9999H9.33333L9.33333 6.66658Z" fill="black"></path>
+    <path d="M9.33333 20.6666C9.33333 20.2984 9.63181 19.9999 10 19.9999C10.3682 19.9999 10.6667 20.2984 10.6667 20.6666V22.6666H12.6667C13.0349 22.6666 13.3333 22.9651 13.3333 23.3333C13.3333 23.7014 13.0349 23.9999 12.6667 23.9999H10.6667V25.9999C10.6667 26.3681 10.3682 26.6666 10 26.6666C9.63181 26.6666 9.33333 26.3681 9.33333 25.9999V23.9999H7.33333C6.96514 23.9999 6.66667 23.7014 6.66667 23.3333C6.66667 22.9651 6.96514 22.6666 7.33333 22.6666H9.33333V20.6666Z" fill="black"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.3333 22.6666C24.4379 22.6666 25.3333 21.7712 25.3333 20.6666C25.3333 19.562 24.4379 18.6666 23.3333 18.6666C22.2288 18.6666 21.3333 19.562 21.3333 20.6666C21.3333 21.7712 22.2288 22.6666 23.3333 22.6666ZM23.3333 21.3333C23.7015 21.3333 24 21.0348 24 20.6666C24 20.2984 23.7015 19.9999 23.3333 19.9999C22.9651 19.9999 22.6667 20.2984 22.6667 20.6666C22.6667 21.0348 22.9651 21.3333 23.3333 21.3333Z" fill="black"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.3333 24.6666C21.3333 25.7712 20.4379 26.6666 19.3333 26.6666C18.2288 26.6666 17.3333 25.7712 17.3333 24.6666C17.3333 23.562 18.2288 22.6666 19.3333 22.6666C20.4379 22.6666 21.3333 23.562 21.3333 24.6666ZM20 24.6666C20 25.0348 19.7015 25.3333 19.3333 25.3333C18.9651 25.3333 18.6667 25.0348 18.6667 24.6666C18.6667 24.2984 18.9651 23.9999 19.3333 23.9999C19.7015 23.9999 20 24.2984 20 24.6666Z" fill="black"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4.66659C4 2.82564 5.49238 1.33325 7.33333 1.33325H24.6667C26.5076 1.33325 28 2.82564 28 4.66659V27.3333C28 29.1742 26.5076 30.6666 24.6667 30.6666H7.33333C5.49238 30.6666 4 29.1742 4 27.3333V4.66659ZM7.33333 2.66659H24.6667C25.7712 2.66659 26.6667 3.56202 26.6667 4.66659V27.3333C26.6667 28.4378 25.7712 29.3333 24.6667 29.3333H7.33333C6.22876 29.3333 5.33333 28.4378 5.33333 27.3333V4.66659C5.33333 3.56202 6.22876 2.66659 7.33333 2.66659Z" fill="black"></path>
+  </svg></p></div><div><h5>Motor de engajamento</h5><p class="subtitle">Devolvemos uma parte da nossa receita para incentivar o engajamento e disponibilizamos créditos que são doados para ONGs conforme os beneficiários completam suas metas de saúde.</p></div></div></li></div><div class="Home__SoluctionsImage-sc-hzp0ft-12 essHgo"><img src="./Axenya _ Ecossistema Inteligente de Saúde_files/1671824307-chat-com-equipe-de-saude.png"></div></ul></div></div></section><section data-section="results" class="Home__Section-sc-hzp0ft-1 lbJNaV"><h5>Por que a Axenya?</h5><div class="Home__ResultBlock-sc-hzp0ft-14 dsXhWq"><ul class="Home__ResultList-sc-hzp0ft-13 ibRuVR"><li class="is-actived"><h3>Melhor cuidado</h3><p>A conscientização do uso correto e de forma preventiva aliada com a gestão de risco e o monitoramento remoto, contribui significativamente com a melhora de hábitos relacionados a saúde.</p><img src="./Axenya _ Ecossistema Inteligente de Saúde_files/1671825763-cuidado.png" alt="Cuidado"></li><li class=""><h3>Resultados clínicos comprovados</h3><p>Nossas soluções possuem resultados clínicos publicados em veículos e congressos médicos de referência mundial, com impacto significativo na vida das pessoas, no risco de desenvolver problemas de saúde e no custo para o sistema como um todo.</p><img src="./Axenya _ Ecossistema Inteligente de Saúde_files/1671826555-resultados-clinicos.png" alt="Resultados"></li><li class=""><h3>Menos custo</h3><p>Na Axenya, o reajuste do próximo período começa a ser trabalhado no dia seguinte à negociação do último reajuste, resultando em reajustes abaixo de qualquer indicador.</p><img src="./Axenya _ Ecossistema Inteligente de Saúde_files/1672244880-historico-de-reajustes-da-carteira.png" alt="reajustes"></li></ul><button class="right"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button></div></section><section data-section="achievements" class="Home__Section-sc-hzp0ft-1 lbJNaV"><div class="content"><ul><li><strong>+50.000</strong><p>pessoas sob os cuidados da Axenya</p></li><li><strong>6,5 anos</strong><p>é o tempo médio de relacionamento com nossos clientes</p></li><li><strong>99%</strong><p>de retenção de clientes corporativos (acima de 100 vidas)</p></li></ul></div></section><section data-section="form" id="form" class="Home__Section-sc-hzp0ft-1 lbJNaV"><div class="content"><div><img src="./Axenya _ Ecossistema Inteligente de Saúde_files/axenya-logo-white.svg" alt="Logo Axenya" width="52px"><h3>Revolucionando a experiência que as empresas e pessoas têm com a saúde.</h3><p>Unimos a tecnologia e um time de especialistas da saúde para apoiar o RH na gestão da saúde das empresas.</p><p>Preencha o formulário e em breve a nossa equipe entrará em contato com você.</p><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path></svg></div>
+    <div>
+
+      <form id="formHome" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+        <input type=hidden name="oid" value="00DDn000002q7A8">
+        <input type=hidden name="retURL" value="http://">
+        
+        <!--  ----------------------------------------------------------------------  -->
+        <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
+        <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
+        <!--  <input type="hidden" name="debug" value=1>                              -->
+        <!--  <input type="hidden" name="debugEmail" value="b@axenya.com">            -->
+        <!--  ----------------------------------------------------------------------  -->
+        
+        <label for="first_name">Primeiro Nome</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" />
+        
+        <label for="last_name">Sobrenome</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+        
+        <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" />
+        
+        <label for="phone">Telefone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" />
+        
+        <label for="company">Empresa</label><input  id="company" maxlength="40" name="company" size="20" type="text" />
+        
+        <label for="description">Descrição</label><textarea name="description"></textarea>
+        
+        <label>Categoria</label>
+        <select  style="
+          padding: 15px;
+          border-radius: 5px;
+          background: rgba(0, 0, 0, 0.3);
+          color: #fff;
+          text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);" 
+          id="00NDn00000M0fnO" name="00NDn00000M0fnO" title="Categoria">
+            <option value="">-- Nenhum --</option><option value="PME 1">Até 30 vidas</option>
+            <option value="PME 2">De 30 a 99 vidas</option>
+            <option value="Middle">De 99 a 1000 vidas</option>
+            <option value="Corporate">Acima de 1000 vidas</option>
+        </select>
+        <input type="submit" name="submit">
+        
+      </form>
+
+    </div></div></section></div><div class="Toastify"></div><footer class="styles__Container-sc-8bsb8r-0 iYaryb"><div class="styles__Content-sc-8bsb8r-1 cLryyV"><div class="styles__Grid-sc-8bsb8r-2 cvUNB"><div class="styles__Box-sc-8bsb8r-3 hJgoVE"><div><img src="./Axenya _ Ecossistema Inteligente de Saúde_files/axenya-logotype-white.svg" alt="Logo Axenya" width="232px"></div><div><span>AXENYA DIGITAL LTDA</span><span>CNPJ: 12.381.921/0001-20</span><span>Todos os direitos reservados</span></div></div><div class="styles__Box-sc-8bsb8r-3 hJgoVE contact"><strong>Contato</strong><p>contato@axenya.com</p><a href="mailto:info@axenya.com" title="Fale com a Axenya">Fale com a Axenya</a></div><div class="styles__Box-sc-8bsb8r-3 hJgoVE"><strong>Redes sociais</strong><div class="social"><a href="https://www.linkedin.com/company/axenya/" title="Ir para o Linkedin Axenya"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M847.7 112H176.3c-35.5 0-64.3 28.8-64.3 64.3v671.4c0 35.5 28.8 64.3 64.3 64.3h671.4c35.5 0 64.3-28.8 64.3-64.3V176.3c0-35.5-28.8-64.3-64.3-64.3zm0 736c-447.8-.1-671.7-.2-671.7-.3.1-447.8.2-671.7.3-671.7 447.8.1 671.7.2 671.7.3-.1 447.8-.2 671.7-.3 671.7zM230.6 411.9h118.7v381.8H230.6zm59.4-52.2c37.9 0 68.8-30.8 68.8-68.8a68.8 68.8 0 1 0-137.6 0c-.1 38 30.7 68.8 68.8 68.8zm252.3 245.1c0-49.8 9.5-98 71.2-98 60.8 0 61.7 56.9 61.7 101.2v185.7h118.6V584.3c0-102.8-22.2-181.9-142.3-181.9-57.7 0-96.4 31.7-112.3 61.7h-1.6v-52.2H423.7v381.8h118.6V604.8z"></path></svg></a><a href="https://www.instagram.com/axenyahealth/" title="Ir para o Instragram Axenya"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1 717.1 625.5 717.1 512 625.5 306.9 512 306.9zm0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7 645.3 438.6 645.3 512 585.4 645.3 512 645.3zm213.5-394.6c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9 47.9-21.3 47.9-47.9a47.84 47.84 0 0 0-47.9-47.9zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zm-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840c-58.3 0-183.3 4.7-235.9-16.1-18.2-7.3-31.8-16.1-45.8-30.2-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512c0-58.3-4.7-183.3 16.1-235.9 7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2 14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 58.3 4.7 183.2-16.2 235.8z"></path></svg></a><a href="https://www.facebook.com/axenyasaude/" title="Ir para o Facebook Axenya"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-32 736H663.9V602.2h104l15.6-120.7H663.9v-77.1c0-35 9.7-58.8 59.8-58.8h63.9v-108c-11.1-1.5-49-4.8-93.2-4.8-92.2 0-155.3 56.3-155.3 159.6v89H434.9v120.7h104.3V848H176V176h672v672z"></path></svg></a></div></div></div></div></footer></div><script src="./Axenya _ Ecossistema Inteligente de Saúde_files/react-refresh.js.download"></script><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"development","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script><noscript>
+                  <iframe src="https://www.googletagmanager.com/ns.html?id=G-78ND35G50H"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+                </noscript><div id="__next-build-watcher" style="position: fixed; bottom: 10px; right: 20px; width: 0px; height: 0px; z-index: 99999;"></div><next-route-announcer><p aria-live="assertive" id="__next-route-announcer__" role="alert" style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; overflow-wrap: normal;"></p></next-route-announcer></body></html>
